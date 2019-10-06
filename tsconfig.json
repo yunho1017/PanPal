@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist/",
+    "tsBuildInfoFile": "./dist/front-end",
+    "incremental": true,
+    "sourceMap": true,
+    "sourceRoot": "/",
+    "inlineSources": true,
+    "noImplicitAny": true,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2016",
+    "jsx": "preserve",
+    "lib": ["es2017", "dom"],
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "typeRoots": ["./typings", "./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "common": ["./app/common"],
+      "common/*": ["./app/common/*"],
+      "app/common/*": ["./app/common/*"]
+    }
+  },
+  "include": ["__tests__/**/*", "app/**/*", "scripts/**/*"],
+  "exclude": ["node_modules"]
+}
